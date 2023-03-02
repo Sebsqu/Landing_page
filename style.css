@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    scroll-behavior: smooth;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(23, 0, 48);
+    color: white;
+}
+    
+.me{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+    
+p{
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.btn{
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    border: 1px solid white;
+    padding: 5px 4px 5px 8px;
+    cursor: pointer;
+}
+
+.icon-right-small{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* about */
+
+section div{
+    width: 100%;
+    padding: 1%;
+}
+
+section div img{
+    margin-top: 10px;
+    width: 20%;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+
+.about2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about4, .about5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about4 img, .about5 img{
+    margin: 1%;
+}
+
+.about h1{
+    margin: 25px 0 25px 0;
+}
+
+/*projects*/
+
+.projects{
+    background-color: rgb(23, 0, 48);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects div{
+    padding: 5%;
+}
+.projects1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projects1 img{
+    padding-bottom: 20px;
+    align-self: center;
+    width: 80%;
+}
+
+footer{
+    padding: 30px 0 10px 0;
+    text-align: center;
+}
+
+.contact{
+    margin: 20px 0;
+}
+
+.contact i{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0px 5px;
+    border-radius: 6px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+footer p{
+    padding-top: 20px;
+}
+
+footer p span{
+    color: rgb(23, 0, 48);
+    font-weight: 700;
+}
+
+
+@media(min-width: 750px){
+    p{
+        font-size: 40px;
+    }
+
+    div.btn{
+        font-size: 20px;
+    }
+
+    section p,h1 {
+        font-size: 26px;
+    }
+
+    .about2{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about2 #elo{
+        width: 49%;
+    }
+    .about2 #elo img{
+        width: 50%;
+    }
+
+    .about3 img{
+        width: 25%;  
+    }
+
+    .about4,.about5{
+        justify-content: space-evenly;
+    }
+
+    .projects{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+
+    .projects div{
+        padding: 2%;
+        width: 50%;
+    }
+
+    footer h1{
+        font-size: 40px;
+    }
+
+    .contact i{
+        font-size: 24px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+}
+
+@media(min-width: 1200px)
+{
+    p{
+        font-size: 50px;
+    }
+
+    div.btn{
+        font-size: 26px;
+        padding: 8px 7px 8px 11px;
+    }
+
+    .icon-right-small{
+        display: inline-block;
+        transition:0.4s;
+        margin-left: 2px;
+    }
+
+    div.btn:hover i{
+        transform: rotate(90deg);
+    }
+
+    section{
+        padding: 0 20%;
+    }
+
+    section p{
+        font-size: 30px;
+    }
+
+    section h1{
+        font-size: 34px;
+    }
+
+    .about2 #elo{
+        width: 33%;
+        margin-bottom: 50px;
+    }
+    
+    .about3 img{
+        width: 15%;  
+    }
+    
+    .projects{
+        padding: 50px 20%;
+    }
+
+    .contact i:hover{
+        color: black;
+        background-color: white;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+}
